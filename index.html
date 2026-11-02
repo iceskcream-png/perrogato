@@ -387,9 +387,9 @@ service cloud.firestore {
   });
   const db = getFirestore(app);
 
-  const TOTAL_BUDGET = 600000;
-  const CATEGORIES = ['식비', '외식비', '생활비', '교통비', '문화/여가', '빼로가또'];
-  const CAT_EMOJI = { '식비':'🍚', '외식비':'🍽️', '생활비':'🏠', '교통비':'🚌', '문화/여가':'🎬', '빼로가또':'🍦' };
+  const TOTAL_BUDGET = 800000;
+  const CATEGORIES = ['식비', '외식비', '생활비', '주유비', '문화/여가', '빼로가또'];
+  const CAT_EMOJI = { '식비':'🍚', '외식비':'🍽️', '생활비':'🏠', '주유비':'🚌', '문화/여가':'🎬', '빼로가또':'🍦' };
 
   let currentMonth = new Date().toISOString().slice(0, 7);
   let cashback = 0;
